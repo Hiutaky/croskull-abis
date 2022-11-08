@@ -1,0 +1,171 @@
+{
+    "abi": [{
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "ClientReturnToken",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [{
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "client",
+                    "type": "address"
+                }
+            ],
+            "name": "ClientUseToken",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "OwnerReturnToken",
+            "type": "event"
+        },
+        {
+            "inputs": [{
+                "internalType": "address",
+                "name": "newManager",
+                "type": "address"
+            }],
+            "name": "addManager",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "adminReturnToken",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "isManager",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "isTokenUsable",
+            "outputs": [{
+                    "internalType": "bool",
+                    "name": "isUsable",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "address",
+                    "name": "client",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }],
+            "name": "managers",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "address",
+                "name": "managerToRemove",
+                "type": "address"
+            }],
+            "name": "removeManager",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "returnToken",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }],
+            "name": "tokensJobs",
+            "outputs": [{
+                    "internalType": "address",
+                    "name": "client",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isUsable",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [{
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }],
+            "name": "useToken",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ]
+}
